@@ -17,3 +17,14 @@ model.fit(features,y_train)
 
 features_test = cv.transform(z_test)
 print("Accuracy: {}".format(model.score(features_test,y_test)))
+
+print("Please eneter the text of your email to determine whether it is spam or ham:")
+inputstring = str(input("Enter text here:"))
+
+inputarray = (cv.transform([inputstring]))
+
+result = model.predict(inputarray)
+if (result == 'spam'):
+    print("The email is most likley spam.")
+elif (result == 'ham'):
+    print("The email is most likley ham.")
