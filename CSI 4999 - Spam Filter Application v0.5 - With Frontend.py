@@ -49,13 +49,16 @@ frame.place(relwidth=0.8, relheight=0.5, relx=0.1, rely=0.25)
 
 msg = StringVar()
 submit = tk.Button(frame, text="Submit", padx=10, pady=5, fg="black", bg="#808080", command=stringPredict)
-submit.place(relx=0.43, rely=0.3)
+submit.place(relx=0.43, rely=0.5)
 
 emailEntry = tk.Entry(frame, width=7, justify=CENTER, textvariable=msg)
-emailEntry.place(relwidth=0.8, relheight=0.1, relx=0.1, rely=0.1)
+emailEntry.place(relwidth=0.8, relheight=0.1, relx=0.1, rely=0.33)
 
 result = StringVar()
 resultLabel = tk.Label(frame, textvariable=result, fg="black", bg="#949494", font=("Arial", 15))
-resultLabel.place(relx=0.24, rely=0.6)
+resultLabel.place(relx=0.24, rely=0.8)
+
+instructions = tk.Label(frame, text="Please enter the subject or the text of an email to determine \nwhether it is spam or ham!", fg="black", bg="#949494", font=("Arial", 12))
+instructions.place(relx=0.08, rely=0.1)
 
 root.mainloop()
