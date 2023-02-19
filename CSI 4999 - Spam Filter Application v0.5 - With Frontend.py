@@ -22,7 +22,7 @@ model = MultinomialNB()
 model.fit(z_train_df,y_train)
 
 root = tk.Tk()
-root.title("Spam of Ham?")
+root.title("Spam or Ham?")
 
 def stringPredict(*args):
     try:
