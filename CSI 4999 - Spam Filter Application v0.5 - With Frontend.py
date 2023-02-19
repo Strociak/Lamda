@@ -23,6 +23,7 @@ model.fit(z_train_df,y_train)
 
 root = tk.Tk()
 root.title("Spam or Ham?")
+root.iconbitmap("icon.ico")
 
 def stringPredict(*args):
     try:
@@ -41,7 +42,7 @@ canvas.pack()
 
 title1 = tk.Label(canvas, text="Spam or Ham?", fg="black", bg="#808080", font=("Arial", 25))
 title1.place(relx=0.32, rely=0.05)
-title2 = tk.Label(canvas, text="Team Lambda", fg="black", bg="#808080", font=("Arial", 15))
+title2 = tk.Label(canvas, text="Team Lamda", fg="black", bg="#808080", font=("Arial", 15))
 title2.place(relx=0.4, rely=0.15)
 
 frame = tk.Frame(root, bg="#949494")
