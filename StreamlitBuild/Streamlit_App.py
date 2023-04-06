@@ -14,7 +14,7 @@ hide_default_format = """
        """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
-st.set_page_config(page_title="Spam or Ham?")
+st.set_page_config(page_title="Spam or Ham")
 
 st.write("# Spam or Ham?")
 
