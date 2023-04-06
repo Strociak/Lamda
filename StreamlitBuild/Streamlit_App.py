@@ -4,7 +4,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from PIL import Image
 import streamlit as st
 
 hide_default_format = """
@@ -15,8 +14,7 @@ hide_default_format = """
        """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
-im = Image.open('icon.png')
-st.set_page_config(page_title="Spam or Ham?", page_icon = im)
+st.set_page_config(page_title="Spam or Ham?")
 
 st.write("# Spam or Ham?")
 
