@@ -4,7 +4,19 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
+from PIL import Image
 import streamlit as st
+
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: hidden;}
+       </style>
+       """
+st.markdown(hide_default_format, unsafe_allow_html=True)
+
+im = Image.open('icon.png')
+st.set_page_config(page_title="Spam or Ham?", page_icon = im)
 
 st.write("# Spam or Ham?")
 
@@ -98,17 +110,17 @@ with col3:
 #clearbutton = st.button("Clear")
     
 if(senderbutton):
-    st.write(msg)
+    #st.write(msg)
     st.write(blacklistAddresses(msg))
     #msg = entryframe.text_input('Please input any of the following from the email you wish to test: its sender, its subject, or its body text:', value="", key="2")
     
 if(subjectbutton):
-   st.write(msg)
+   #st.write(msg)
    st.write(stringPredictSubject(msg))
    #msg = entryframe.text_input('Please input any of the following from the email you wish to test: its sender, its subject, or its body text:', value="", key="3")
     
 if(bodybutton):
-    st.write(msg)
+    #st.write(msg)
     st.write(stringPredictEmail(msg))
     #msg = entryframe.text_input('Please input any of the following from the email you wish to test: its sender, its subject, or its body text:', value="", key="4")
 
