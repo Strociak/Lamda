@@ -13,7 +13,7 @@ hide_default_format = """
        </style>
        """
 st.markdown(hide_default_format, unsafe_allow_html=True)
-st.set_page_config(page_title='Spam of Ham', page_icon="https://github.com/Strociak/Lamda/blob/main/StreamlitBuild/icon.png")
+st.set_page_config(page_title='Spam or Ham', page_icon="👨‍💻")
 
 st.write("# Spam or Ham?")
 
