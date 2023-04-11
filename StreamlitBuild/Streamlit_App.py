@@ -75,7 +75,7 @@ def stringPredictSubject(entry):
         if (resultbool):
             result = "The email is most likley spam."
         else:
-            result = "<style='text-align: center;'>The email is most likley ham.</h1>"
+            result = "The email is most likley ham."
     except ValueError:
         pass
     return result
