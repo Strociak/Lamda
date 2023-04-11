@@ -6,6 +6,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 import streamlit as st
 
+st.set_page_config(page_title='Spam or Ham', page_icon="👨‍💻")
+
 hide_default_format = """
        <style>
        #MainMenu {visibility: hidden; }
@@ -13,7 +15,6 @@ hide_default_format = """
        </style>
        """
 st.markdown(hide_default_format, unsafe_allow_html=True)
-st.set_page_config(page_title='Spam or Ham', page_icon="👨‍💻")
 
 st.write("# Spam or Ham?")
 
