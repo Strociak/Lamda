@@ -17,7 +17,7 @@ hide_default_format = """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center;'>Spam or Ham?</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center;'>Spam or Ham description here.</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center;'>Developing an effective spam filter for emails by leveraging machine learning techniques to classify emails as spam or ham (non-spam), based on the email body, address, and subject.</h4>", unsafe_allow_html=True)
 
 emaildataset = pd.read_csv('OurDataset.csv')
 subjectdataset = pd.read_csv('OurSubjectDataset.csv')
