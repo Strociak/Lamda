@@ -17,6 +17,7 @@ hide_default_format = """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
 st.write("# Spam or Ham?")
+st.write("Spam or Ham description here.")
 
 emaildataset = pd.read_csv('OurDataset.csv')
 subjectdataset = pd.read_csv('OurSubjectDataset.csv')
