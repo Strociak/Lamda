@@ -17,7 +17,7 @@ hide_default_format = """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center;'>Spam or Ham?</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center;'>Spam or Ham description here.</h2>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center;'>Spam or Ham description here.</h4>", unsafe_allow_html=True)
 
 emaildataset = pd.read_csv('OurDataset.csv')
 subjectdataset = pd.read_csv('OurSubjectDataset.csv')
