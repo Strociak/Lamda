@@ -13,6 +13,7 @@ hide_default_format = """
        </style>
        """
 st.markdown(hide_default_format, unsafe_allow_html=True)
+st.set_page_config(page_title='Spam of Ham', page_icon="https://github.com/Strociak/Lamda/blob/main/StreamlitBuild/icon.png")
 
 st.write("# Spam or Ham?")
 
@@ -103,7 +104,7 @@ with col2:
 with col3:
     bodybutton = st.button("Body Text")
     
-clearbutton = st.button("Clear")
+#clearbutton = st.button("Clear")
     
 if(senderbutton):
     #st.write(msg)
@@ -120,12 +121,12 @@ if(bodybutton):
     st.write(stringPredictEmail(msg))
     #msg = entryframe.text_input('Please input any of the following from the email you wish to test: its sender, its subject, or its body text:', value="", key="4")
 
-if 'temp' not in st.session_state:
-    st.session_state.temp = ''
+#if 'temp' not in st.session_state:
+#    st.session_state.temp = ''
     
-def clear():
-    st.session_state.temp = st.session_state.input
-    st.session_state.input = ''
+#def clear():
+#    st.session_state.temp = st.session_state.input
+#    st.session_state.input = ''
 
-if(clearbutton):
-    clear()
+#if(clearbutton):
+#    clear()
