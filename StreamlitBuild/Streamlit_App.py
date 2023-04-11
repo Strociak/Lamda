@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 import streamlit as st
 
-st.set_page_config(page_title='Spam or Ham', page_icon="👨‍💻")
+st.set_page_config(page_title='Spam or Ham', page_icon="https://github.com/Strociak/Lamda/blob/main/StreamlitBuild/icon.png?raw=true💻")
 
 hide_default_format = """
        <style>
