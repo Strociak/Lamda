@@ -90,9 +90,9 @@ def blacklistAddresses(entry):
                     if field == entry:
                         tempbool = True
         if (tempbool):
-            result = "This email address is part of our blacklisted dataset of known spam addresses.\nThe email is most likley spam."
+            result = "This email address is part of our blacklisted dataset of known spam addresses.\n\nThe email is most likley spam."
         else:
-            result = "This email address is not part of our blacklisted dataset of known spam addresses.\nThe email is most likley ham."
+            result = "This email address is not part of our blacklisted dataset of known spam addresses.\n\nThe email is most likley ham."
     except ValueError:
         pass
     return result
