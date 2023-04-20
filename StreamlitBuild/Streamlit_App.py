@@ -42,14 +42,14 @@ a = addressdataset['address']
 b = addressdataset['class']
 a_train, a_test, b_train, b_test = train_test_split(a,b,test_size = 0.2)
 
-vectorizer = CountVectorizer(stop_words='english')
-vectorizer.fit(x_train.values)
+vectorizer2 = CountVectorizer(stop_words='english')
+vectorizer2.fit(x_train.values)
 
 a_train_df = vectorizer.transform(a_train)
 a_test_df = vectorizer.transform(a_test)
 
-subjectmodel = MultinomialNB()
-subjectmodel.fit(a_train_df,b_train)
+addressmodel = MultinomialNB()
+addressmodel.fit(a_train_df,b_train)
 
 entryframe = st.empty()
 
@@ -86,7 +86,7 @@ def stringPredictSubject(entry):
 def stringPredictAddresses(entry):
     try:
         msgarray = (vectorizer.transform([entry]))
-        resultbool = subjectmodel.predict(msgarray)
+        resultbool = addressmodel.predict(msgarray)
         if (resultbool):
             result = "The email is most likley spam."
         else:
