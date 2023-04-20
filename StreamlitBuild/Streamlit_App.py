@@ -12,6 +12,7 @@ emaildataset = pd.read_csv('OurDataset.csv')
 subjectdataset = pd.read_csv('OurSubjectDataset.csv')
 addressdataset = pd.read_csv('OurAddressDataset.csv')
 st.write(print(addressdataset.columns.tolist()))
+st.write(print(emaildataset.columns.tolist()))
 
 z = emaildataset['email']
 y = emaildataset['class']
